@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1132</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Template</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="swMainWindow">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Home"/>
+      <widget class="QWidget" name="Communication"/>
+      <widget class="QWidget" name="Automodetest"/>
+      <widget class="QWidget" name="communication"/>
+      <widget class="QWidget" name="about"/>
+      <widget class="QWidget" name="usermanagement"/>
+      <widget class="QWidget" name="ATETESTCASES"/>
+      <widget class="QWidget" name="HealthStatus"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1132</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHome">
+    <property name="title">
+     <string>Home</string>
+    </property>
+    <addaction name="actionHome"/>
+   </widget>
+   <widget class="QMenu" name="menuCommunication">
+    <property name="title">
+     <string>Communication</string>
+    </property>
+    <addaction name="action_Communication"/>
+   </widget>
+   <widget class="QMenu" name="menuUser_Managment">
+    <property name="title">
+     <string>User managment</string>
+    </property>
+    <addaction name="actionUserManagment"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionA_bout"/>
+   </widget>
+   <widget class="QMenu" name="menuATE_Test_Cases">
+    <property name="title">
+     <string>Automode test cases</string>
+    </property>
+    <addaction name="action_ATE_Test_Cases"/>
+   </widget>
+   <widget class="QMenu" name="menuCableloss">
+    <property name="title">
+     <string>Cableloss</string>
+    </property>
+    <addaction name="actionCableloss_Calibration"/>
+   </widget>
+   <widget class="QMenu" name="menuReport_Generator">
+    <property name="title">
+     <string>Report Generator</string>
+    </property>
+    <addaction name="actionReport_Generator"/>
+   </widget>
+   <addaction name="menuHome"/>
+   <addaction name="menuCommunication"/>
+   <addaction name="menuATE_Test_Cases"/>
+   <addaction name="menuCableloss"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuUser_Managment"/>
+   <addaction name="menuReport_Generator"/>
+  </widget>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_Communication">
+   <property name="text">
+    <string>Communication</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionUserManagment">
+   <property name="text">
+    <string>UserManagment</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+U</string>
+   </property>
+  </action>
+  <action name="actionA_bout">
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_ATE_Test_Cases">
+   <property name="text">
+    <string>Test Cases</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="actionCableloss_Calibration">
+   <property name="text">
+    <string>Cableloss Calibration</string>
+   </property>
+  </action>
+  <action name="actionReport_Generator">
+   <property name="text">
+    <string>Report Generator</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
